@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatVC" customModule="CollectionPageMenu" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="G6G-dk-v94">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="7ea-ok-AGa"/>
+                        <outlet property="delegate" destination="-1" id="O4h-5X-aYo"/>
+                    </connections>
+                </tableView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y4s-is-LXw">
+                    <rect key="frame" x="8" y="512" width="261" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="XP3-3q-PqF"/>
+                        <constraint firstAttribute="width" constant="261" id="nJV-h7-Gl0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uF-Ne-1ha">
+                    <rect key="frame" x="277" y="525" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="1ne-f4-q5H"/>
+                        <constraint firstAttribute="height" constant="30" id="pjh-8f-kun"/>
+                    </constraints>
+                    <state key="normal" title="Go"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Y4s-is-LXw" firstAttribute="top" secondItem="G6G-dk-v94" secondAttribute="bottom" constant="8" id="7Mi-8D-hxR"/>
+                <constraint firstItem="8uF-Ne-1ha" firstAttribute="leading" secondItem="Y4s-is-LXw" secondAttribute="trailing" constant="8" id="AKe-DS-Ogg"/>
+                <constraint firstItem="G6G-dk-v94" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Kej-GX-BSc"/>
+                <constraint firstAttribute="trailing" secondItem="G6G-dk-v94" secondAttribute="trailing" id="X7S-8C-IrW"/>
+                <constraint firstItem="G6G-dk-v94" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="alL-gl-cZY"/>
+                <constraint firstItem="Y4s-is-LXw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="dPK-Gw-Ge1"/>
+                <constraint firstItem="8uF-Ne-1ha" firstAttribute="centerY" secondItem="Y4s-is-LXw" secondAttribute="centerY" id="okI-pL-OFU"/>
+                <constraint firstAttribute="bottom" secondItem="Y4s-is-LXw" secondAttribute="bottom" id="z5l-CA-99Y"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

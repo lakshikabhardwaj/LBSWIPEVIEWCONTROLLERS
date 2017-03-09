@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CPPageCell" customModule="CollectionPageMenu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="488"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="488"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page No." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uSx-3Y-j5b">
+                        <rect key="frame" x="72" y="141" width="188" height="85"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qLo-NI-m9j">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="488"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="uSx-3Y-j5b" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="141" id="9ho-8a-uMs"/>
+                <constraint firstItem="qLo-NI-m9j" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="PfF-6V-QaV"/>
+                <constraint firstItem="qLo-NI-m9j" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="TpD-Ci-lSI"/>
+                <constraint firstAttribute="bottom" secondItem="uSx-3Y-j5b" secondAttribute="bottom" constant="262" id="aul-b0-ywO"/>
+                <constraint firstAttribute="trailing" secondItem="uSx-3Y-j5b" secondAttribute="trailing" constant="60" id="gfW-Xv-N1X"/>
+                <constraint firstAttribute="trailing" secondItem="qLo-NI-m9j" secondAttribute="trailing" id="tbc-JE-b6U"/>
+                <constraint firstAttribute="bottom" secondItem="qLo-NI-m9j" secondAttribute="bottom" id="wYg-cR-04n"/>
+                <constraint firstItem="uSx-3Y-j5b" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="72" id="x6A-EN-XJU"/>
+            </constraints>
+            <size key="customSize" width="180" height="270"/>
+            <connections>
+                <outlet property="pageView" destination="qLo-NI-m9j" id="yyK-88-1Dq"/>
+            </connections>
+            <point key="canvasLocation" x="291" y="276"/>
+        </collectionViewCell>
+    </objects>
+</document>
