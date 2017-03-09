@@ -1,4 +1,5 @@
-# LBViewControllerCollection
+# LBSwipeViewControllers
+
 Most of the mobile applications need to switch among view controllers like tab along with the swipe or just selecting it by tap just like in WhatsApp , paytm , Intagram,Windows Phone etc. It woks on the collectionView having view controllers in cell. you just need to call some methods. Any kind of UI can be changed by the properties or customizing xib or using your own. It is easy to use, reduce effort and well tested. Done worry about the collection just put it in code as in given sample. 
 To use CPPageMenu :
 (Swift 3)
